@@ -12,7 +12,7 @@ class manager:
                     name=input("enter the name of task you want to add or 0 for main menu:")
                     if name=="0":
                         continue
-                    status=input("enter the status of task you want to add:")
+                    status=input("enter the status of task you want to add or 0 for main menu:")
                     if status=="0":
                         continue
                     self.add_task(name.capitalize(),status.capitalize())
