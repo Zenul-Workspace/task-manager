@@ -1,5 +1,5 @@
 import json
-class manager:
+class TaskManager:
     def __init__(self) -> None:
         self.tasks=[]
         self.load()
@@ -109,5 +109,6 @@ class manager:
     def save(self):
         with open("tasks.json","w")as file:
             json.dump(self.tasks,file,indent=4)
-user=manager()
-user.main()
+if __name__ =="__main__":
+    user=TaskManager()
+    user.main()
